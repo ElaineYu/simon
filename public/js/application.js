@@ -4,9 +4,9 @@ $(document).ready(function(){
     	 //prevent the default action for that event from happening
     	event.preventDefault();
     	// generate random color? color_me
-    	$.post('/color', function(response) {
+    	$.post('/color', function(data) {
     		//use jQuery to submit an AJAX post to the form's action
-    		$("#color_me").html(response);
+    		$("#color_me").html(data);
     
     });
   });
